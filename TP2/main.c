@@ -79,7 +79,7 @@ void ListaVariacionNegativo(){
         }
     }
 
-    fclose(f);
+    pclose(f);
 }
 
 void ArchivoCsv(){
@@ -91,7 +91,7 @@ void ArchivoCsv(){
 
     const char filaContado[] = "<td style=\"text-align: center;\">Cdo.</td>";
     const char td[] = "</td><td>";
-    const char header[] = "Especie;Precio de compra;Precio de venta;Apertura;Precio Máximo;Precio Mínimo\n";
+    const char header[] = "Especie;Precio de compra;Precio de venta;Apertura;Precio MÃ¡ximo;Precio MÃ­nimo\n";
     char precioCompra[5] = "";
     char precioVenta[5] = "";
     char nombre[5] = "";
@@ -172,7 +172,7 @@ void ArchivoCsv(){
         }
     }
 
-    fclose(f);
+    pclose(f);
     fclose(f2);
 
     printf("\n");
@@ -268,7 +268,7 @@ void TablaHtml(){
 
     fprintf(f2, "%s", endTable);
 
-    fclose(f);
+    pclose(f);
     fclose(f2);
 
     printf("\n");
